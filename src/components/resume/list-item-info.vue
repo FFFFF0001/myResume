@@ -5,8 +5,8 @@
   </ListItem>
 </template>
 <script>
-  import ListItem from '@/components/list-item'
-  import EditImage from '@/components/edit-image'
+  import ListItem from './list-item'
+  import EditImage from './edit-image'
 
   export default {
     name: 'ListItemInfo',

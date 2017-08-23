@@ -2,4 +2,4 @@ build/*.js
 config/*.js
 server/*.js
 server.js
-src/assets/js/html2canvas.js
+src

@@ -20,12 +20,12 @@
   </div>
 </template>
 <script>
-  import EditImage from '@/components/edit-image'
-  import ListItemAbout from '@/components/list-item-about'
-  import ListItemSkill from '@/components/list-item-skill'
-  import ListItemEducation from '@/components/list-item-education'
-  import ListItemExperience from '@/components/list-item-experience'
-  import ListItemInfo from '@/components/list-item-info'
+  import EditImage from './edit-image'
+  import ListItemAbout from './list-item-about'
+  import ListItemSkill from './list-item-skill'
+  import ListItemEducation from './list-item-education'
+  import ListItemExperience from './list-item-experience'
+  import ListItemInfo from './list-item-info'
 
   export default {
     name: 'ContextList',

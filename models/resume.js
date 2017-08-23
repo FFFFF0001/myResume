@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const resumeSchema = mongoose.Schema({
+  username: {type: String},
   name: {type: String, require: true},
   info: {
     header: String,
@@ -28,7 +29,7 @@ const resumeSchema = mongoose.Schema({
     skills: [
       {
         skill: String,
-        percent: String
+        percent: Number
       }
     ],
     works: [

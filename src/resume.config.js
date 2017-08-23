@@ -1,61 +1,56 @@
 let info = {
-  name: '铉嘉伟',
+  name: 'XXXXX',
   info: {
-    job: '移动开发工程师',
-    location: '深圳，中国',
+    job: 'XXX',
+    location: 'XX，中国',
     sex: '男',
-    age: '22',
-    degree: '本科',
+    age: 'XX',
+    degree: 'XX',
     education: [
       {
-        school: '中北大学',
-        major: '通信工程',
-        date: '2011.9 — 2015.6'
-      },
-      {
-        school: '中北大学',
-        major: '通信工程',
-        date: '2011.9 — 2015.6'
+        school: 'XXXXXX',
+        major: 'XXXX',
+        date: '20XX.9 — 20XX.6'
       }
     ],
     contact: {
-      phone: '17666117715',
-      email: 'mifindxuan@gmail.com',
-      weChat: 'mystylexuan',
-      qq: '981192886'
+      phone: 'XXXX',
+      email: 'XXXXX@gmail.com',
+      weChat: 'XXXX',
+      qq: 'XXXX'
     },
     social: {
-      github: 'github.com/mifind',
-      blog: 'mifind.online'
+      github: 'github.com/XXXX',
+      blog: 'XXXXX'
     },
     skills: [
       {
-        skill: 'React Native',
-        percent: 80
-      },
-      {
         skill: 'Android',
-        percent: 70
+        percent: 50
       },
       {
-        skill: '前端',
-        percent: 60
+        skill: 'IOS',
+        percent: 50
+      },
+      {
+        skill: 'XXXXXX',
+        percent: 50
       }
     ],
     works: [
       {
-        company: '盈峰环境',
-        job: '开发工程师',
-        date: '2017.5 — 至今',
-        intro: '负责开发工作'
+        company: 'XXXXX',
+        job: 'XXXXX',
+        date: '2015.5 — 2017.4',
+        intro: 'XXXXX'
       }, {
-        company: '盈峰环境',
-        job: '开发工程师',
+        company: 'XXXXX',
+        job: 'XXXXX',
         date: '2017.5 — 至今',
-        intro: '负责开发工作'
+        intro: 'XXXXX'
       }
     ],
-    aboutme: '我就是我，不一样的烟火'
+    aboutme: 'XXXXX'
   }
 }
 module.exports = info
