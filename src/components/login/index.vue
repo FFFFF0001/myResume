@@ -37,8 +37,8 @@
 <script>
   import Girl from './girl/girl.vue'
 
-  const REGISTER = this.HOST + '/register'
-  const LOGIN = this.HOST + '/login'
+  const REGISTER = '/register'
+  const LOGIN = '/login'
   export default {
     name: 'login',
     components: {
@@ -82,7 +82,7 @@
           username: this.usernameInput,
           password: this.passwordInput
         }
-        self.$http.post(REGISTER, params)
+        self.$http.post(this.HOST +REGISTER, params)
           .then(function (response) {
             if (response.data.code === 0) {
               self.open()
@@ -101,12 +101,13 @@
           })
       },
       login: function () {
+        console.log(this.HOST)
         let self = this
         let params = {
           username: this.usernameInput,
           password: this.passwordInput
         }
-        self.$http.post(LOGIN, params)
+        self.$http.post(this.HOST + LOGIN, params)
           .then(function (response) {
             console.log(response)
             let toastType = 'text'

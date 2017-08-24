@@ -190,9 +190,10 @@
   import ListItemInfo from './list-item-info'
   import html2canvas from '@/assets/js/html2canvas.js'
   import FileSaver from 'file-saver'
+
   let info = require('@/resume.config')
-  const RESUME = this.HOST + '/resume'
-  const RESUME_ADD = this.HOST + '/resume/add'
+  const RESUME = '/resume'
+  const RESUME_ADD = '/resume/add'
   export default {
     name: 'app',
     mounted: function () {
@@ -223,7 +224,7 @@
           this.$router.replace({name: 'login'})
         } else {
           // 根据用户名查询简历信息
-          self.$http.post(RESUME, {username: this.$route.params.username})
+          self.$http.post(this.HOST + RESUME, {username: this.$route.params.username})
             .then(function (response) {
               console.log(response)
               if (response.data.code === 0) {
@@ -246,7 +247,7 @@
         this.resume.username = this.$route.params.username
         let params = this.resume
         console.log('请求参数', params)
-        this.$http.post(RESUME_ADD, params)
+        this.$http.post(this.HOST + RESUME_ADD, params)
           .then(function (response) {
             if (response.data) {
               console.log('向数据库添加数据', response.data)
@@ -270,7 +271,7 @@
         info.username = this.$route.params.username
         let params = info
         console.log('请求参数', params)
-        this.$http.put(RESUME, params)
+        this.$http.put(this.HOST + RESUME, params)
           .then(function (response) {
             if (response.data) {
               console.log('同步数据成功', response.data)
@@ -298,7 +299,7 @@
         this.resume.username = this.$route.params.username
         let params = this.resume
         console.log('请求参数', params)
-        this.$http.put(RESUME, params)
+        this.$http.put(this.HOST + RESUME, params)
           .then(function (response) {
             if (response.data) {
               self.$vux.toast.show({
