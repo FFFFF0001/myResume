@@ -29,7 +29,7 @@
     </div>
     <mu-dialog :open="dialog" title="注册成功" @close="close">
       是否直接登录
-      <mu-flat-button slot="actions" primary @close="close" label="否"/>
+      <mu-flat-button slot="actions" primary @click="close"  label="否"/>
       <mu-flat-button slot="actions" primary @click="enter" label="是"/>
     </mu-dialog>
   </div>

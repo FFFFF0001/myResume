@@ -1,5 +1,14 @@
 ##express+mongodb+webpack+vue的简历项目
 
+* ####  更新，添加登录注册逻辑。
+* ####  登录账号将注册用户并绑定resume.config.js中的配置数据。同步数据库更改简历数据的方式，一个是更改配置文件然后点击同步按钮，一个通过修改数据到完成。
+* #### 无法直接通过修改页面同步修改后台数据，修改页面功能只是在保存图片，当前问题所在在于，修改页面使用的是contenteditable="true"属性，但是无法实现与数据双向绑定，如果依赖于监听的话又会代码很乱很麻烦。
+* > 当前问题还是在Vue跨域的问题，虽然通过proxyTable可以解决开发环境的跨域问题，但是在生产环境时会丢失主域的，这个需要后台配合设置跨域，可以使用nginx反向代理。
+* > 关于生产环境node服务器部署，推荐Docker+Nginx+PM2处理访问量比较大的站点，我也在看这部分。当然也有同学推荐用用forever替代PM2，这部分学习一下之后再进行讨论。
+
+
+![](https://github.com/MIFind/myResume/blob/master/exam/ex5.gif)  
+
 >后端采用node.js，使用express框架搭建路由和中间件的处理。
 这里使用的monogoose只是一个orm，一个对象关系映射的操作工具。
 webpack进行vue的配置。
