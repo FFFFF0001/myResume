@@ -181,7 +181,6 @@
 </template>
 
 <script>
-  import Vue from 'vue'
   import EditImage from './edit-image'
   import ContextList from './context-list'
   import ListItemAbout from './list-item-about'
@@ -191,12 +190,9 @@
   import ListItemInfo from './list-item-info'
   import html2canvas from '@/assets/js/html2canvas.js'
   import FileSaver from 'file-saver'
-  import { AjaxPlugin } from 'vux'
-
   let info = require('@/resume.config')
-  Vue.use(AjaxPlugin)
-  const RESUME = '/api/resume'
-  const RESUME_ADD = '/api/resume/add'
+  const RESUME = this.HOST + '/resume'
+  const RESUME_ADD = this.HOST + '/resume/add'
   export default {
     name: 'app',
     mounted: function () {

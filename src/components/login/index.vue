@@ -24,7 +24,7 @@
       <br/>
       <mu-raised-button label="登录" class="demo-raised-button" :disabled="loginDisable" @click="login"/>
       <br>
-      <mu-raised-button label="注册" class="demo-raised-button margin-top15" :disabled="loginDisable" primary
+      <mu-raised-button label="注册" class="demo-raised-button-register" :disabled="loginDisable" primary
                         @click="regist"/>
     </div>
     <mu-dialog :open="dialog" title="注册成功" @close="close">
@@ -37,8 +37,8 @@
 <script>
   import Girl from './girl/girl.vue'
 
-  const REGISTER = '/api/register'
-  const LOGIN = '/api/login'
+  const REGISTER = this.HOST + '/register'
+  const LOGIN = this.HOST + '/login'
   export default {
     name: 'login',
     components: {
@@ -146,10 +146,6 @@
 </script>
 <style lang="less">
 
-  .margin-top15 {
-    margin-top: 15px;
-  }
-
   .container {
     flex: 1;
     width: 100%;
@@ -174,6 +170,12 @@
       padding: 20px 0 20px 0;
       font-size: 17px;
       width: 260px
+    }
+    .demo-raised-button-register {
+      padding: 20px 0 20px 0;
+      font-size: 17px;
+      width: 260px;
+      margin-top: 15px;
     }
   }
 
