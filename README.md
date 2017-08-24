@@ -1,4 +1,4 @@
-##express+mongodb+webpack+vue的简历项目
+## express+mongodb+webpack+vue的简历项目
 
 * ####  更新，添加登录注册逻辑。
 * ####  登录账号将注册用户并绑定resume.config.js中的配置数据。同步数据库更改简历数据的方式，一个是更改配置文件然后点击同步按钮，一个通过修改数据到完成。
@@ -24,7 +24,7 @@ webpack进行vue的配置。
 ![](https://github.com/MIFind/myResume/blob/master/exam/ex2.png)  
 
 >遇到的问题：
-    跨域问题，使用node和vue组织必然是会遇到的跨域问题，node我默认的端口是3000，vue的默认端口是8080。首先通过设置使服务端具备接受跨域的请求的能力。
+    跨域问题，首先通过设置使服务端具备接受跨域的请求的能力。
 
 ![](https://github.com/MIFind/myResume/blob/master/exam/ex3.png)  
 
@@ -38,7 +38,7 @@ webpack进行vue的配置。
 
 ### 运行
 * 1 安装好环境包括node+vue+mongo
-* 2 链接mongo数据库
+* 2 连接mongo数据库（要到mongodb/bin/mongod，最好写一个脚本来连接。）
 * 3 运行node服务器(node server)
 * 3 运行Vue(npm run dev)
 
